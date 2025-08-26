@@ -3,7 +3,7 @@ movie_search.py
 Simple semantic search on movie plots using SentenceTransformers (all-MiniLM-L6-v2).
 
 Public API:
-    - search_movies(query: str, top_n: int = 5, csv_path: str = "movies.csv") -> pandas.DataFrame
+    - search_movies(query: str, top_n: int = 3, csv_path: str = "movies.csv") -> pandas.DataFrame
 
 Returns a DataFrame with columns: ['title', 'plot', 'similarity'] sorted by similarity desc.
 """
@@ -51,7 +51,7 @@ def _encode_texts(texts: list[str], model: SentenceTransformer) -> np.ndarray:
 
 def search_movies(
     query: str,
-    top_n: int = 5,
+    top_n: int = 3,
     csv_path: str = "movies.csv",
     model_name: str = DEFAULT_MODEL_NAME,
 ) -> pd.DataFrame:
@@ -62,7 +62,7 @@ def search_movies(
     ----------
     query : str
         Natural language search string (e.g., "spy thriller in Paris").
-    top_n : int, default=5
+    top_n : int, default=3
         Number of results to return (exactly top_n rows, or fewer if dataset smaller).
     csv_path : str, default="movies.csv"
         Path to the movies CSV with columns ['title','plot'].
@@ -109,7 +109,7 @@ def search_movies(
 if __name__ == "__main__":
     # Quick demo on the sample dataset (if present)
     try:
-        out = search_movies("spy thriller in Paris", top_n=5, csv_path="movies.csv")
+        out = search_movies("spy thriller in Paris", top_n=3, csv_path="movies.csv")
         print(out.to_string(index=False))
     except Exception as e:
         print(f"[movie_search] Demo couldn't run: {e}")
