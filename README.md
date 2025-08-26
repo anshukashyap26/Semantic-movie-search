@@ -11,8 +11,8 @@ This repository contains my solution for **Assignment‑1: Semantic Search on Mo
 
 ```bash
 # 1) Clone your repo (example)
-git clone https://github.com/<your-username>/movie-search-assignment.git
-cd movie-search-assignment
+git clone https://github.com/<your-username>/semantic-movie-search.git
+cd semantic-movie-search
 
 # 2) Create & activate a virtual environment
 python -m venv venv
@@ -50,7 +50,7 @@ python -m unittest tests/test_movie_search.py -v
 ## Repo Structure (expected)
 
 ```
-movie-search-assignment/
+semantic-movie-search/
 ├─ movie_search.py          # Implementation
 ├─ movies.csv               # Dataset (ensure it contains 'title' and 'plot')
 ├─ requirements.txt         # Dependencies
