@@ -134,15 +134,41 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
-# Environments
+# --- Virtual envs (you already have most of these) ---
 .env
 .envrc
-.venv
-env/
+.venv/
 venv/
+env/
 ENV/
 env.bak/
 venv.bak/
+
+# --- Python bytecode & caches ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# --- Test/typing/tool caches ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+
+# --- Coverage ---
+.coverage
+htmlcov/
+
+# --- Editors/OS junk ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
 
 # Spyder project settings
 .spyderproject
