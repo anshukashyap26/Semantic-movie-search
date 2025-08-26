@@ -1,3 +1,8 @@
+#Name: Anshu Kashyap
+#Roll No.: 221010209
+#Branch: ECE
+
+
 # Movie Semantic Search Assignment
 
 This repository contains my solution for **Assignment‑1: Semantic Search on Movie Plots** using SentenceTransformers (**all‑MiniLM‑L6‑v2**).
