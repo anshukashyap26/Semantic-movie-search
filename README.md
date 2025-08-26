@@ -1,6 +1,6 @@
-#Name: Anshu Kashyap
-#Roll No.: 221010209
-#Branch: ECE
+Name: Anshu Kashyap
+Roll No.: 221010209
+Branch: ECE
 
 
 # Movie Semantic Search Assignment
