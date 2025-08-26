@@ -16,8 +16,8 @@ This repository contains my solution for **Assignment‑1: Semantic Search on Mo
 
 ```bash
 # 1) Clone your repo (example)
-git clone https://github.com/<your-username>/semantic-movie-search.git
-cd semantic-movie-search
+git clone https://github.com/anshukashyap26/Semantic-movie-search
+cd Semantic-movie-search
 
 # 2) Create & activate a virtual environment
 python -m venv venv
@@ -38,7 +38,7 @@ jupyter notebook movie_search_solution.ipynb
 ```python
 from movie_search import search_movies
 
-df = search_movies("spy thriller in Paris", top_n=5, csv_path="movies.csv")
+df = search_movies("spy thriller in Paris", top_n=3, csv_path="movies.csv")
 print(df)
 ```
 
